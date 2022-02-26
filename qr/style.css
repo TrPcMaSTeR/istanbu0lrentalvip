@@ -1,0 +1,123 @@
+body,
+html {
+	width: 100%;
+	height: fit-content;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex: 1;
+}
+
+.bg-image {
+	background-image: url(./img/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	filter: blur(3px);
+}
+
+.container {
+	background-color: rgb(0, 0, 0, 0.9);
+	max-width: 640px;
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: rgb(30, 30, 30) 0px 0px 30px;
+	height: fit-content;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.top-image {
+	height: 250px;
+	background-image: url(./img/car.png);
+	background-size: cover;
+}
+
+.text-part {
+	background-color: #22272e50;
+	color: white;
+	padding: 15px;
+	border-radius: 0 0 20px 20px;
+}
+
+.text-part h2 {
+	margin: 0;
+}
+
+.text-part .text-title {
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 10px;
+	font-weight: bolder;
+}
+
+.text-part .text-content {
+	font-family: "Roboto", sans-serif;
+	font-size: min(4vw, 25px);
+}
+
+.divider {
+	align-self: center;
+	width: 95%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: rgb(0, 0, 0) 0px 0px 30px;
+}
+
+.links {
+	display: flex;
+	padding: 15px;
+	align-items: center;
+	flex-direction: row;
+	word-break: break-all;
+}
+
+.link-icon {
+	flex: 1;
+	font-size: min(6vw, 50px);
+	align-items: center;
+	justify-content: center;
+}
+
+.link-content {
+	flex: 7;
+	color: white;
+	font-size: min(5vw, 30px);
+	padding-left: 1%;
+}
+
+.go-link {
+	font-family: "Source Code Pro";
+	border-radius: 100px;
+	padding: 5px 8px;
+	color: rgb(0, 0, 0) !important;
+	font-size: min(6vw, 30px);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	word-wrap: break-word;
+	text-decoration: none;
+}
+
+.whatsapp-link .link-icon {
+	color: rgb(0, 255, 0);
+}
+
+.site-link .link-icon {
+	color: rgb(255, 255, 255);
+}
+
+.instagram-link .link-icon {
+	color: #ff00aa;
+}
+
+.whatsapp-link a {
+	text-decoration: none;
+	color: white;
+}
