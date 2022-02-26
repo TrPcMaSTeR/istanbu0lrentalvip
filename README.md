@@ -1,2 +1,2 @@
-# istanbu0lrentalvip
+# istanbulrentalvip
 Rental for istanbul
