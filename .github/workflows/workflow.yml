@@ -35,6 +35,11 @@ jobs:
                   npm i
                   npm run build
                   cp -rf qr/ out/
+                  =======MAIN FOLDER=======
+                  ls -a
+                  cd out
+                  echo =======OUT FOLDER=======
+                  ls -a
             - name: Upload ftp
               uses: sebastianpopp/ftp-action@releases/v2
               with:
