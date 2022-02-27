@@ -34,12 +34,13 @@ jobs:
               run: |
                   npm i
                   npm run build
-                  cp -rf qr/ out/
+                  cp -r qr/ out/
                   echo =======MAIN FOLDER=======
                   ls -a
                   cd out
                   echo =======OUT FOLDER=======
                   ls -a
+                  cd ..
             - name: FTP deploy
               uses: SamKirkland/FTP-Deploy-Action@4.3.0
               with:
